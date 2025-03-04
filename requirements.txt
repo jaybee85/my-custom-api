@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-fastapi[all]
-=======
 # API and Server
 fastapi>=0.68.0        # FastAPI framework
 uvicorn>=0.15.0        # ASGI server
@@ -16,4 +13,3 @@ python-dateutil>=2.8.2      # Extended datetime functionality
 # Production Dependencies
 gunicorn>=20.1.0           # Production WSGI server
 python-multipart>=0.0.5    # Form data handling 
->>>>>>> 7e66ba1 (Initial commit: Flight search API using SerpApi)
