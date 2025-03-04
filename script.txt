@@ -1,0 +1,31 @@
+// Example JavaScript code to POST payload to Zapier webhook
+const zapierWebhookUrl = 'YOUR_ZAPIER_WEBHOOK_URL';
+
+// Sample payload data
+const payload = {
+    name: "John Doe",
+    email: "john@example.com",
+    message: "Hello from the webhook!",
+    timestamp: new Date().toISOString()
+};
+
+// Using Fetch API to make the POST request
+fetch(zapierWebhookUrl, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload)
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+})
+.then(data => {
+    console.log('Success:', data);
+})
+.catch(error => {
+    console.error('Error:', error);
+});

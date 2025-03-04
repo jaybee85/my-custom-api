@@ -1,1 +1,19 @@
+<<<<<<< HEAD
 fastapi[all]
+=======
+# API and Server
+fastapi>=0.68.0        # FastAPI framework
+uvicorn>=0.15.0        # ASGI server
+python-dotenv>=0.19.0  # Environment variables management
+
+# External Services
+google-search-results>=2.4.2  # SerpApi client
+requests>=2.31.0             # HTTP client for API calls
+
+# Date handling
+python-dateutil>=2.8.2      # Extended datetime functionality
+
+# Production Dependencies
+gunicorn>=20.1.0           # Production WSGI server
+python-multipart>=0.0.5    # Form data handling 
+>>>>>>> 7e66ba1 (Initial commit: Flight search API using SerpApi)
